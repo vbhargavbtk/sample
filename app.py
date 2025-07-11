@@ -22,5 +22,6 @@ def index():
             error = f"Invalid input: {e}"
     return render_template('index.html', prediction=prediction, error=error)
 
+# For local development
 if __name__ == '__main__':
-    app.run(debug=True) 
+    app.run(host='0.0.0.0', port=5000) 
